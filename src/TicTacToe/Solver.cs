@@ -46,16 +46,16 @@ namespace TicTacToe
                     foreach(Quintuplet quin in quins)
                     {
                         score += EvalQuintuplet(quin, mark, BoardState);
-                        if(score > bestScore)
-                        {
-                            bestScore = score;
-                            bestCells = new List<Cell>();
-                            bestCells.Add(cCell);
-                        }
-                        else if(score == bestScore)
-                        {
-                            bestCells.Add(cCell);
-                        }
+                    }
+                    if (score > bestScore)
+                    {
+                        bestScore = score;
+                        bestCells = new List<Cell>();
+                        bestCells.Add(cCell);
+                    }
+                    else if (score == bestScore)
+                    {
+                        bestCells.Add(cCell);
                     }
                 }
             }

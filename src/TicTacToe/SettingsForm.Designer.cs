@@ -74,9 +74,9 @@
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.labelVersion = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.animatedIcon = new TicTacToe.AnimatedIcon();
             this.ColorDialog = new System.Windows.Forms.ColorDialog();
             this.timer = new System.Windows.Forms.Timer(this.components);
-            this.animatedIcon = new TicTacToe.AnimatedIcon();
             this.tabControl.SuspendLayout();
             this.TabNewGame.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -482,7 +482,7 @@
             0,
             0});
             this.numericUpDownMoveDuration.Minimum = new decimal(new int[] {
-            50,
+            20,
             0,
             0,
             0});
@@ -609,11 +609,6 @@
             this.label10.TabIndex = 0;
             this.label10.Text = "CreatedByMichalMarsalekIn2015";
             // 
-            // timer
-            // 
-            this.timer.Interval = 50;
-            this.timer.Tick += new System.EventHandler(this.timer_Tick);
-            // 
             // animatedIcon
             // 
             this.animatedIcon.Completion = 0F;
@@ -621,6 +616,11 @@
             this.animatedIcon.Name = "animatedIcon";
             this.animatedIcon.Size = new System.Drawing.Size(100, 100);
             this.animatedIcon.TabIndex = 1;
+            // 
+            // timer
+            // 
+            this.timer.Interval = 50;
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
             // SettingsForm
             // 
